@@ -1,0 +1,163 @@
+{
+  "trilhas": [
+    {
+      "id": "javascript",
+      "nome": "JavaScript",
+      "descricao": "Da base da linguagem até assincronismo e testes.",
+      "cargaHoraria": 40,
+      "niveis": {
+        "iniciante": {
+          "modulos": ["Variáveis e tipos", "Condicionais e laços", "Funções", "Arrays e objetos"],
+          "desafios": [
+            {
+              "titulo": "Soma dos pares",
+              "enunciado": "Crie uma função que receba um array de números e retorne a soma dos pares.",
+              "exemplo": "somaPares([1, 2, 3, 4]) → 6"
+            },
+            {
+              "titulo": "Inverter palavra",
+              "enunciado": "Crie uma função que receba uma string e a retorne invertida.",
+              "exemplo": "inverter('geo') → 'oeg'"
+            }
+          ]
+        },
+        "intermediario": {
+          "modulos": ["Métodos de array (map, filter, reduce)", "Módulos ES", "Promises e async/await", "Tratamento de erros"],
+          "desafios": [
+            {
+              "titulo": "Agrupar por categoria",
+              "enunciado": "Use reduce para agrupar uma lista de produtos pela propriedade categoria.",
+              "exemplo": "agrupar([{ nome: 'Maçã', categoria: 'fruta' }]) → { fruta: [{ nome: 'Maçã', ... }] }"
+            },
+            {
+              "titulo": "Buscar com timeout",
+              "enunciado": "Crie uma função async que rejeite a Promise se a operação demorar mais que N milissegundos.",
+              "exemplo": "await comTimeout(buscarDados(), 1000)"
+            }
+          ]
+        },
+        "avancado": {
+          "modulos": ["Event loop", "Closures e escopo", "Padrões de projeto", "Testes automatizados"],
+          "desafios": [
+            {
+              "titulo": "Debounce",
+              "enunciado": "Implemente uma função debounce que só execute a callback após N ms sem novas chamadas.",
+              "exemplo": "const salvar = debounce(enviar, 300)"
+            },
+            {
+              "titulo": "Memoização",
+              "enunciado": "Implemente uma função memoize que guarde em cache o resultado de chamadas com os mesmos argumentos.",
+              "exemplo": "const fibRapido = memoize(fib)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "python",
+      "nome": "Python",
+      "descricao": "Sintaxe, estruturas de dados e boas práticas da linguagem.",
+      "cargaHoraria": 36,
+      "niveis": {
+        "iniciante": {
+          "modulos": ["Tipos e variáveis", "Listas, tuplas e dicionários", "Funções", "Laços e compreensões"],
+          "desafios": [
+            {
+              "titulo": "Contar vogais",
+              "enunciado": "Crie uma função que retorne quantas vogais existem em uma frase.",
+              "exemplo": "contar_vogais('Geo Explore') → 5"
+            },
+            {
+              "titulo": "Maior número",
+              "enunciado": "Crie uma função que retorne o maior número de uma lista sem usar max().",
+              "exemplo": "maior([3, 9, 2]) → 9"
+            }
+          ]
+        },
+        "intermediario": {
+          "modulos": ["Orientação a objetos", "Exceções", "Manipulação de arquivos", "Ambientes virtuais e pip"],
+          "desafios": [
+            {
+              "titulo": "Contador de palavras",
+              "enunciado": "Leia um arquivo de texto e retorne as 3 palavras mais frequentes.",
+              "exemplo": "top_palavras('texto.txt') → [('de', 12), ('a', 9), ('o', 7)]"
+            },
+            {
+              "titulo": "Conta bancária",
+              "enunciado": "Crie a classe ContaBancaria com depósito, saque e uma exceção para saldo insuficiente.",
+              "exemplo": "conta.sacar(500) → SaldoInsuficienteError"
+            }
+          ]
+        },
+        "avancado": {
+          "modulos": ["Decorators", "Geradores e iteradores", "Concorrência com asyncio", "Testes com pytest"],
+          "desafios": [
+            {
+              "titulo": "Decorator de tempo",
+              "enunciado": "Crie um decorator que imprima quanto tempo uma função levou para executar.",
+              "exemplo": "@cronometrar\ndef processar(): ..."
+            },
+            {
+              "titulo": "Gerador de Fibonacci",
+              "enunciado": "Crie um gerador infinito que produza a sequência de Fibonacci.",
+              "exemplo": "list(islice(fibonacci(), 5)) → [0, 1, 1, 2, 3]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "java",
+      "nome": "Java",
+      "descricao": "Fundamentos, orientação a objetos e recursos modernos da plataforma.",
+      "cargaHoraria": 48,
+      "niveis": {
+        "iniciante": {
+          "modulos": ["Sintaxe e tipos primitivos", "Estruturas de controle", "Métodos", "Arrays"],
+          "desafios": [
+            {
+              "titulo": "Tabuada",
+              "enunciado": "Crie um método que imprima a tabuada de 1 a 10 de um número.",
+              "exemplo": "tabuada(7) → 7 x 1 = 7 ... 7 x 10 = 70"
+            },
+            {
+              "titulo": "Palíndromo",
+              "enunciado": "Crie um método que diga se uma palavra é um palíndromo.",
+              "exemplo": "ehPalindromo(\"radar\") → true"
+            }
+          ]
+        },
+        "intermediario": {
+          "modulos": ["Classes, herança e interfaces", "Collections", "Exceções", "Streams API"],
+          "desafios": [
+            {
+              "titulo": "Filtrar com Streams",
+              "enunciado": "Dada uma lista de funcionários, retorne os nomes dos que ganham acima de 5000, em ordem alfabética.",
+              "exemplo": "acimaDe(funcionarios, 5000) → [\"Ana\", \"Bruno\"]"
+            },
+            {
+              "titulo": "Formas geométricas",
+              "enunciado": "Crie a interface Forma com area() e implemente Circulo e Retangulo.",
+              "exemplo": "new Circulo(2).area() → 12.57"
+            }
+          ]
+        },
+        "avancado": {
+          "modulos": ["Generics", "Concorrência e threads", "Records e pattern matching", "Testes com JUnit"],
+          "desafios": [
+            {
+              "titulo": "Cache genérico",
+              "enunciado": "Implemente uma classe Cache<K, V> com limite de itens que descarte o menos usado.",
+              "exemplo": "new Cache<String, Integer>(100)"
+            },
+            {
+              "titulo": "Downloads paralelos",
+              "enunciado": "Use ExecutorService para processar uma lista de tarefas em paralelo e somar os resultados.",
+              "exemplo": "processar(tarefas, 4) → 1250"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
