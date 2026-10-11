@@ -1,0 +1,16 @@
+node_modules/
+*.log
+.env*
+.DS_Store
+
+# Arquivos de uso local
+.claude/
+.vscode/
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Markdown só é versionado no README e em docs/
+*.md
+!README.md
+!docs/*.md
